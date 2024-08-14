@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"
+        href="data:image/png;base64,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">
+    <title>Computer Shopping</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    .header {
+        width: 90%;
+        height: 180px;
+        /* background-color: aqua; */
+        margin: auto;
+    }
+
+    .header img {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .card {
+        margin: auto;
+    }
+    .footer{
+        background-color: rgb(86, 93, 93);
+        width: 100%;
+        height: 170px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer .logo{
+        width: 30%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer .logo img{
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+    }
+    .footer .about{
+        width: 40%;
+        height: 100%;
+         display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer .about p{
+        font-size: 20px;
+        color: #fff;
+    }
+    .footer .contact{
+        width: 30%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .footer .contact i{
+        font-size: 30px;
+        color: #fff;
+    }
+    @media (max-width: 575.98px) {
+        .header {
+            width: 85%;
+            height: 100px;
+            /* background-color: aquamarine; */
+        }
+        .footer{
+            width: 100%;
+            height: 200px;
+            gap: 10px;
+            
+        }
+        .footer .logo{
+            width: 20%;
+            height: 100%;
+            margin-left: 5px;
+        }
+        .footer .logo img{
+            width: 80px;
+            height: 80px;
+        }
+        .footer .about{
+            width: 60%;
+            height: 100%;
+
+        }
+        .footer .about p{
+            font-size: 12px;
+        }
+        .footer .contact{
+            width: 20%;
+            gap: 5px;
+            display: flex;
+            flex-direction: column;
+
+        }
+        .footer .contact i{
+            font-size: 20px;
+        }
+
+    }
+
+    /* Small devices (landscape phones, less than 768px) */
+    @media (max-width: 767.98px) {}
+
+    /* Medium devices (tablets, less than 992px) */
+    @media (max-width: 991.98px) {}
+
+    /* Large devices (desktops, less than 1200px) */
+    @media (max-width: 1199.98px) {}
+
+    /* X-Large devices (large desktops, less than 1400px) */
+    @media (max-width: 1399.98px) {}
+
+    /* XX-Large devices (larger desktops)
+ No media query since the xxl breakpoint has no upper bound on its width */
+</style>
+
+<body>
+    <div class="container  p-3 my-5">
+        <div class="row">
+            <div class="col-12">
+                <div class="header">
+                    <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/gaming-computer-banner-sale-design-template-4eee9f783ef62e0f7122e9ae7828bec1_screen.jpg?ts=1659604125"
+                        alt="">
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="row my-3 m-auto">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 my-3">
+                    <div class="card" style="width: 18rem;">
+                        <img width="100%" height="250px"
+                            src="https://i.pinimg.com/736x/00/5e/07/005e0743672ea32291a83419f95f98bc.jpg"
+                            class="card-img-top" alt="">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 my-3">
+                    <div class="card" style="width: 18rem;">
+                        <img width="100%" height="250px"
+                            src="https://i.pinimg.com/236x/38/65/94/386594135756b1c8572b20991e9dd963.jpg"
+                            class="card-img-top" alt="">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 my-3">
+                    <div class="card" style="width: 18rem;">
+                        <img width="100%" height="250px"
+                            src="https://i.pinimg.com/236x/a3/19/e7/a319e72d956f350d82801c5d650b26f5.jpg"
+                            class="card-img-top" alt="">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 my-3">
+                    <div class="card" style="width: 18rem;">
+                        <img width="100%" height="250px"
+                            src="https://i.pinimg.com/236x/db/1f/e2/db1fe2a55af18c48840879f755de0736.jpg"
+                            class="card-img-top" alt="">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 my-3">
+                    <div class="card" style="width: 18rem;">
+                        <img width="100%" height="250px"
+                            src="https://i.pinimg.com/236x/e6/a5/d0/e6a5d0ff18a11f0f8a47d891653dfa23.jpg"
+                            class="card-img-top" alt="">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 my-3">
+                    <div class="card" style="width: 18rem;">
+                        <img width="100%" height="250px"
+                            src="https://i.pinimg.com/236x/c6/c5/ca/c6c5cadc67d8f640d223f0644d2cc006.jpg"
+                            class="card-img-top" alt="">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="row">
+        <div class="col-12 col-sml-12">
+            <div class="footer">
+                <div class="logo">
+                    <img src="data:image/png;base64,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" alt="">
+                </div>
+                <div class="about">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae hic enim dicta? Sint, soluta
+                        facilis repellendus dolor voluptas at officiis!</p>
+                </div>
+                <div class="contact">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
